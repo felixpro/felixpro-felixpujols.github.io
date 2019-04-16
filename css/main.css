@@ -558,7 +558,6 @@ p {
   align-items: center;
 }
 
-
 section.services {
   background: #2a2a2e;
 }
@@ -582,7 +581,7 @@ section.services {
   color: #fff;
 }
 
-.service-box img {
+.service-box .empty_img_work {
   width: 100%;
   margin: auto;
 }
@@ -591,7 +590,15 @@ section.services {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #fff
+  color: #fff;
+  justify-content: center;
+}
+
+.service-box .work-img .empty_work_message {
+  position: absolute;
+  color: #000000;
+  margin: auto;
+  display: none;
 }
 
 .services .service-box h3 {
@@ -827,7 +834,7 @@ section.portfolio:after {
 
 .video-section {
   height: 700px;
-  background-image: url('https://i.pinimg.com/originals/43/63/b5/4363b552da4f906c51f9c44004ea0ef3.gif');
+  background-image: url('https://scontent.fsdq2-1.fna.fbcdn.net/v/t1.0-9/31154242_240197133221062_6254746860448097378_n.jpg?_nc_cat=105&_nc_ht=scontent.fsdq2-1.fna&oh=7e17d21d1b5db20b512987a009df131d&oe=5D30B5A4');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -880,6 +887,49 @@ section.portfolio:after {
   margin-bottom: 30px;
   border-radius: 5px;
 }
+
+
+#lg_testimonial_style
+{
+	height: 200px;
+	overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.testimonials-content {
+  height: 200px;
+  margin-bottom: 25px;
+
+}
+
+
+
+/*
+ *  STYLE large_testimonial
+ */
+
+#lg_testimonial_style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #37383b;
+}
+
+#lg_testimonial_style::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#lg_testimonial_style::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000000;
+}
+
+
+
 
 .testimonials-box:hover {
   transition: all .3s cubic-bezier(.77, 0, .175, 1);
@@ -989,6 +1039,10 @@ section.portfolio:after {
 
 .contact .section-title-1 {
   margin-bottom: 80px;
+}
+
+.contact {
+  padding-top: 0;
 }
 
 input[type="text"],
@@ -1196,23 +1250,20 @@ footer p {
   }
 }
 
-
-
 /*=========Modal========*/
-
 .modal-content {
   padding-bottom: 200px;
 }
 
 .modal-content .close-btn-modal {
-display: flex;
-justify-content: flex-end;
-padding:10px 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
 }
+
 .modal-content .skill-content {
   margin-bottom: 20px;
   padding-left: 0;
-
 }
 
 .modal-content .skill-content-1, .skill-content-2 {
@@ -1236,15 +1287,15 @@ padding:10px 30px;
 }
 
 
-
-.modal-content .project-review p {
-  width: 100%;
-  line-height: 27px;
-  font-size: 16px;
+.project-link {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
-.modal-content .project-review {
-  padding: 0;
+.project-link button{
+ width: 200px;
+ font-size: 14px;
 }
 
 .modal-content .bike-1-img img {
@@ -1364,27 +1415,20 @@ padding:10px 30px;
   box-shadow: 0 0 5px #333;
 }
 
-.modal-content .crema {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 32%;
-  margin-right: 18%;
+.modal-content .space {
+  margin-top: 50px;
 }
 
-.modal-content .crema button {
-  width: 35%;
-  font-size: 14px;
-}
 
-@media (min-width:400px) and (max-width:600px) {
-  .modal-content .crema {
-    margin-top: 40%;
+@media (min-width:300px) and (max-width:600px) {
+  .modal-content .space {
+    margin-top: 100px;
   }
 }
 
-@media (min-width:600px) and (max-width:1920px) {
-  .modal-content .crema {
-    margin-top: 50%;
+@media (min-width:1000px) and (max-width:1920px) {
+  .modal-content .space {
+    margin-top: 500px;
   }
 }
 
@@ -1419,9 +1463,6 @@ padding:10px 30px;
     width: 100%;
   }
 
-  .modal-content .project-review p {
-    font-size: 14px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
