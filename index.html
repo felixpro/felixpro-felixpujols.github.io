@@ -440,22 +440,24 @@
         <div class="row align">
 
           <div class="col-md-8">
-            <form>
+
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwxKYuep6gP-icSAk_t7KzeiUVq7RYpz2r_GMN0/exec">
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" placeholder="First Name">
+                  <input type="text" name="name" placeholder="First Name">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" placeholder="Last Name">
+                  <input type="text" name="lastname" placeholder="Last Name">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" placeholder="Your Email Address">
+                  <input type="text" name="email" placeholder="Your Email Address">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" placeholder="where are you from?">
+                  <input type="text" name="adress" placeholder="where are you from?">
                 </div>
                 <div class="col-md-12">
-                  <textarea placeholder="Enter Your Message"></textarea>
+                  <textarea placeholder="Enter Your Message" name="message"></textarea>
                 </div>
                 <div class="col-lg-8 col-md-12">
                   <p>
@@ -467,6 +469,10 @@
                 </div>
               </div>
             </form>
+
+            <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+
           </div>
         </div>
       </div>
