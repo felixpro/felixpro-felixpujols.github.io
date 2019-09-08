@@ -234,13 +234,23 @@ span.menu-item-name:before {
 }
 
 .hero-section {
-  background-image: url('https://fifty-v1.netlify.com/img/typed-bg.jpg');
+  background-image: url('../img/fliped_image.jpg ');
   height: 100vh;
   background-size: cover;
-  background-position: center center;
+  background-position: right center;
   width: 100%;
   position: relative;
   z-index: 3;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .hero-section {
+    background-image: url('../img/hero_back.jpg');
+    background-position: left center !important;
+
+  }
 }
 
 .section-hero-content {
@@ -834,9 +844,9 @@ section.portfolio:after {
 
 .video-section {
   height: 700px;
-  background-image: url('https://scontent.fsdq2-1.fna.fbcdn.net/v/t1.0-9/31154242_240197133221062_6254746860448097378_n.jpg?_nc_cat=105&_nc_ht=scontent.fsdq2-1.fna&oh=7e17d21d1b5db20b512987a009df131d&oe=5D30B5A4');
+  background-image: url('../img/me.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   position: relative;
 }
 

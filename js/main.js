@@ -22,7 +22,7 @@ $(document).ready(function() {
   //  Auto Type Setup
 
   $('.hero-section .typed').typed({
-    strings: ["Web Pages."],
+    strings: ["Web Pages.", "Web applications."],
     loop: true,
     startDelay: 1000,
     backDelay: 2000
