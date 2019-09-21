@@ -22,6 +22,18 @@ CSS FILE INDEX
   padding: 0;
 }
 
+
+
+.technology_title {
+  font-size: 12px;
+font-style: italic;
+margin-top: 0px;
+position: relative;
+top: -10px;
+color: #89d3e9 !important;
+padding-bottom: 10px;
+}
+
 body {
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
@@ -1303,9 +1315,16 @@ footer p {
  align-items: center;
 }
 
-.project-link button{
- width: 200px;
- font-size: 14px;
+@media only screen and (max-width: 1024px) {
+  .modal-content  .link_page_btn {
+    display: none !important;
+  }
+}
+
+.project-link button a{
+  padding: 0px 40px;
+  font-size: 14px;
+  color: #fff;
 }
 
 .modal-content .bike-1-img img {
@@ -1326,6 +1345,13 @@ footer p {
   margin: 0;
 }
 
+@media only screen and (max-width: 502px) {
+  .modal-content .content-row {
+    padding: 40px 15px;
+
+  }
+}
+
 .modal-content .wireframe-section {
   background-color: #2a2a2e;
   width: 100%;
@@ -1344,7 +1370,7 @@ footer p {
 }
 
 .modal-content .wireframe-content .wire-img-1 {
-  padding: 40px;
+  padding-top: 40px;
   padding-bottom: 0px;
 }
 
@@ -1354,7 +1380,6 @@ footer p {
 
 .modal-content .process-container {
   padding-top: 50px;
-  padding: 50px 60px;
   padding-bottom: 0px;
 }
 
@@ -1365,6 +1390,10 @@ footer p {
 .modal-content .process-container img {
   width: 100%;
 }
+.modal-content .process-container .image_shadow {
+  box-shadow: 0 0 5px grey;
+}
+
 
 .modal-content .process-container h2 {
   text-align: center;
@@ -1381,12 +1410,22 @@ footer p {
   display: flex;
   justify-content: center;
   margin: 50px 0;
+  padding: 0 15px;
 }
 
 .modal-content .process-text p {
-  width: 60%;
+  width: 80%;
   font-size: 16px;
   margin: 0;
+}
+.modal-content .process-text ul li{
+  color: #fff;
+  list-style: decimal;
+  padding: 7px;
+}
+.modal-content .process-text ul {
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 .modal-content .process-img-content {
@@ -1445,10 +1484,72 @@ footer p {
 .modal-content .btn-success {
   color: #fff;
   border-radius: 3px;
-  background-image: linear-gradient(122deg, #27AE60 0%, #00ff8b 100%);
-  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
   font-weight: 500;
   border: 0;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.modal-content .bicycle {
+  background-image: linear-gradient(122deg, #27AE60 0%, #00ff8b 100%);
+}
+
+.modal-content .bicycle:hover,
+.modal-content .bicycle:focus,
+.modal-content .bicycle:active {
+  background-image: linear-gradient(122deg, #27AE60 0%, #00ff8b 100%);
+}
+
+.modal-content .ars_btn {
+  background-image: linear-gradient(288deg, #7f00ff, #e100ff);
+}
+
+.modal-content .ars_btn:hover,
+.modal-content .ars_btn:focus,
+.modal-content .ars_btn:active {
+  background-image: linear-gradient(288deg, #7f00ff, #e100ff) !important;
+}
+
+.modal-content .tower_1_btn {
+  background: linear-gradient(95deg, rgba(161,49,49,1) 50%, rgba(2,0,36,0.7917542016806722) 100%);
+}
+
+.modal-content .tower_1_btn:hover,
+.modal-content .tower_1_btn:focus,
+.modal-content .tower_1_btn:active {
+  background: linear-gradient(95deg, rgba(161,49,49,1) 50%, rgba(2,0,36,0.7917542016806722) 100%) !important;
+}
+
+
+.modal-content .kadra_btn {
+  background:#68829E;
+}
+
+.modal-content .kadra_btn:hover,
+.modal-content .kadra_btn:focus,
+.modal-content .kadra_btn:active {
+  background:#68829E;
+}
+
+.modal-content .integral_btn {
+  background:#68829E;
+}
+
+.modal-content .integral_btn:hover,
+.modal-content .integral_btn:focus,
+.modal-content .integral_btn:active {
+  background:#68829E !important;
+}
+
+
+.modal-content .tower_2_btn {
+  background:#486B00;
+}
+
+.modal-content .tower_2_btn:hover,
+.modal-content .tower_2_btn:focus,
+.modal-content .tower_2_btn:active {
+  background:#486B00 !important;
 }
 
 .modal-content .btn-success a {
@@ -1456,14 +1557,8 @@ footer p {
   color: #fff;
 }
 
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active,
-.btn-success:not([disabled]):not(.disabled).active,
-.btn-success:not([disabled]):not(.disabled):active,
-.show>.btn-success.dropdown-toggle {
-  background-image: linear-gradient(122deg, #24b3ad 0%, #00e27b 100%);
-  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
+.modal-content .link_page_btn a {
+  text-decoration: none;
   color: #fff;
 }
 
