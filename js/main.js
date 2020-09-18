@@ -317,13 +317,13 @@ $(document).ready(function() {
   }
 
 
-  // Modal
-  $('.btn-modal').click('shown', function() {
-    $('body').css('overflow', 'hidden');
-  })
-  $('.close, .close-inner-btn').click('hidden', function() {
-    $('body').css('overflow', 'auto');
-  });
+  // // Modal
+  // $('.btn-modal').click('shown', function() {
+  //   $('body').css('overflow', 'hidden');
+  // })
+  // $('.close, .close-inner-btn').click('hidden', function() {
+  //   $('body').css('overflow', 'auto');
+  // });
 
   //Coming soon projects Message
   $(".empty_work").mouseenter(function() {
