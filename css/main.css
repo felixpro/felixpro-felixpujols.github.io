@@ -22,6 +22,9 @@ CSS FILE INDEX
   padding: 0;
 }
 
+body {
+  overflow: visible !important;
+}
 
 
 .technology_title {
