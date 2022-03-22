@@ -857,7 +857,7 @@ section.portfolio:after {
 
 .video-section {
   height: 700px;
-  background-image: url('../img/me.jpg');
+  background-image: url('../img/me.jpeg');
   background-size: cover;
   background-position: top center;
   position: relative;
